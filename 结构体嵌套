@@ -1,0 +1,17 @@
+struct other
+{
+  int tall;
+}
+struct stc
+{
+  int age;
+  char name;
+struct other s;
+}
+#include <stdio.h>
+int main ()
+{
+  struct stc s1 ={23,"zhangsan",{189}};
+printf ("%d %s %d",s1.age,s1.name,s1.s.tall);
+  return 0;
+}
