@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h> 
+struct str ()
+{
+  char name[20];
+  int age;
+}
+void text2()
+{
+struct str s ={"zhangsan,18","lisi,20","wangwu,17"};
+int zk =sizeof (arr)/sizrof (arr[0]);
+qsort (s,zk,sizrof(s[0]),com_str_by_name);
+int com_str_bt_name (const char*e1,const char*e2)
+{
+  return strcmp((struct stu*)e1,(strucu str*)e2);
+}
+int main ()
+{
+  text2();
+  return 0;
+}
