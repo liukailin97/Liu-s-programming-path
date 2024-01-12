@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main ()
+{
+    int n =0;
+    int Max=0;
+    int Mine=100;
+    int score =0;
+    int sum =0;
+    while (scanf("%d",&score)==1)
+    {
+        n++;
+        if(score>Max)
+            Max=score;
+        if(score<Mine)
+            Mine=score;
+        sum+=score;
+        if(n==7)
+        {
+            printf("%.2lf\n",(sum-Max-Mine)/5.0);
+            n=0;
+            Mine=100;
+            Max=0;
+            sum=0;
+        }
+    }
+    return 0;
+}
